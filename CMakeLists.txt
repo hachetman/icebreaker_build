@@ -11,4 +11,5 @@ fpga_build_project(
     TARGET 7segment
     TOP_LEVEL_VERILOG "${CMAKE_CURRENT_SOURCE_DIR}/hdl/top_level.sv"
     PCF_FILE "${CMAKE_CURRENT_SOURCE_DIR}/constr/7segment.pcf"
+    HDL_INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}/hdl/cores"
   )
