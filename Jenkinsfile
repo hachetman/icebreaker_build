@@ -8,9 +8,8 @@ pipeline {
                 sh 'cmake .'
             }
         }
-        stage('Build') {
+        stage('Build 7segment binary') {
             steps {
-                echo 'Building 7segment binary'
                 sh 'make 7segment.bin'
             }
         }        
