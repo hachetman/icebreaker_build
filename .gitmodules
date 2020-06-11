@@ -1,0 +1,3 @@
+[submodule "hdl/cores"]
+	path = hdl/cores
+	url = git@github.com:hachetman/cores.git
