@@ -12,6 +12,11 @@ pipeline {
             steps {
                 sh 'make 7segment.bin'
             }
-        }        
+        }
+        stage('Build uart binary') {
+            steps {
+                sh 'make uart.bin'
+            }
+        }            
     }
 }
