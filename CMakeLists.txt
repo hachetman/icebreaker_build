@@ -10,6 +10,12 @@ include(cmake/fpga_build_project.cmake)
 fpga_build_project(
     TARGET 7segment
     TOP_LEVEL_VERILOG "${CMAKE_CURRENT_SOURCE_DIR}/hdl/top_level.sv"
-    PCF_FILE "${CMAKE_CURRENT_SOURCE_DIR}/constr/7segment.pcf"
+    PCF_FILE "${CMAKE_CURRENT_SOURCE_DIR}/constr/icebreaker.pcf"
+    HDL_INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}/hdl/cores/hdl"
+  )
+fpga_build_project(
+    TARGET uart
+    TOP_LEVEL_VERILOG "${CMAKE_CURRENT_SOURCE_DIR}/hdl/uart_top.sv"
+    PCF_FILE "${CMAKE_CURRENT_SOURCE_DIR}/constr/icebreaker.pcf"
     HDL_INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}/hdl/cores/hdl"
   )
